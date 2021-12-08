@@ -1,0 +1,44 @@
+body{
+    background: #051D3B;
+}
+
+.cabecalho-principal{
+    padding: 20px 0;
+}
+
+.container{
+    width: 94%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalho-titulo{
+    width: 145px;
+    height: 34.05px;
+    top:12px;
+}
+
+.input-search{
+    width: 752px;
+    height: 56px;
+    border: none;
+    padding: 0 14px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.16);
+}
+
+.input-search:focus {
+    outline: 0;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.imagem-author{
+    width: 106px;
+    height: 56px;
+    left: 1270px;
+    border-radius: 8px;
+    padding: 12px;
+}
