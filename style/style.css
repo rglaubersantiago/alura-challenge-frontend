@@ -31,6 +31,12 @@ body {
     background: rgba(255, 255, 255, 0.16);
 }
 
+.input-search:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
 .imagem-author {
     width: 106px;
     height: 56px;
@@ -165,8 +171,8 @@ body {
     width: 272px;
     height: 56px;
     border-radius:8px;
-    border:none;
     font-size:16px;
+    border:none;
     padding-left: 14px;
     color: #FFFFFF;
     background: rgba(255, 255, 255, 0.16);
@@ -179,4 +185,32 @@ body {
 .descricao{
     height: 80px;
     padding-top:16px;
+}
+
+.input:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.personalizacao{
+    width: 288px;
+    display: inline-block;
+}
+
+.personalizacao .subtitulo{
+    padding-top:40px;
+}
+
+.personalizacao .input{
+    background: rgba(255, 255, 255, 0.16);
+    color:gray;
+}
+
+.color-picker{
+    width: 272px;
+    height: 56px;
+    border-radius: 4px;
+    margin-top: 24px;
+    background: rgba(196, 196, 196, 0.01);
 }
