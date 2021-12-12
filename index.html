@@ -14,8 +14,8 @@
 <body>
     <header class="cabecalho-principal">
         <div class="container">
-            <h1 class="cabecalho-titulo">
-                <img src="img/Logo.svg" alt="Logo Alura DEV">
+            <h1>
+                <img src="img/Logo.svg" alt="Logo Alura DEV" class="logo">
             </h1>
             <form action="">
                 <input type="search" name="search" placeholder="Busque por algo" class="input-search" />
@@ -25,23 +25,65 @@
     </header>
     <main class="principal">
         <div class="container">
-            <section class="menu-navegacao">
-                <h2 class="subtitulo">Menu</h2>
+            <div class="menu-navegacao">
+                <h2 class="subtitulo subtitulo-menu">Menu</h2>
                 <nav>
                     <ul>
                         <li>
                             <div class="img-menu"><img src="img/vector-editor.svg"></div>
-                            <a href="" class="link-menu">Editor de Código</a>
+                            <a href="#" class="link-menu">Editor de Código</a>
                         </li>
                     </ul>
                     <ul>
                         <li>
                             <div class="img-menu"><img src="img/vector-comunidade.svg"></div>
-                            <a href="" class="link-menu">Comunidade</a>
+                            <a href="#" class="link-menu">Comunidade</a>
                         </li>
                     </ul>
                 </nav>
-            </section>
+            </div>
+            <div>
+                <div class="code-editor-personalizacao">
+                    <div class="code-editor">
+                        <div class="mac-buttons">
+                            <img src="img/ellipse1.png"><img src="img/ellipse2.png"><img src="img/ellipse3.png">
+                        </div>
+                        <textarea class="textarea textarea-editor">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => 
+accum[key], obj)
+
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum),
+res)
+
+const unfold = (f, seed) => {
+  const go = (f, seed, acc) => {
+    const res = f(seed)
+    return res ? go(f, res[1], acc.concat([res[0]])) : acc
+  }
+  return go(f, seed, [])
+}</textarea>
+                    </div>
+                </div>
+                <input type="submit" value="Visualizar com o highlight" class="botao-visualizar-highlight">
+            </div>
+
+            <div class="corpo-right">
+                <form>
+                    <label for="nome-projeto" class="subtitulo-projeto">Seu Projeto</label>
+                    <input type="text" id="nome-projeto" class="input" placeholder="Nome do seu projeto">
+                    <textarea placeholder="Descrição do seu projeto" class="input textarea descricao"></textarea>
+                </form>
+                <!--
+                <fieldset>
+                    <legend class="subtitulo">Personalização</legend>
+                    <select class="">
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                    </select>
+                </fieldset>
+            -->
+            </div>
+
         </div>
     </main>
 </body>
