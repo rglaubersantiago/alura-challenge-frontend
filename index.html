@@ -18,7 +18,7 @@
                 <img src="img/Logo.svg" alt="Logo Alura DEV" class="logo">
             </h1>
             <form action="">
-                <input type="search" name="search" placeholder="Busque por algo" class="input-search" />
+                <input type="search" name="search" placeholder="Busque por algo" class="input-padrao input-search" />
             </form>
             <img src="img/author@3x.png" class="imagem-author">
         </div>
@@ -48,42 +48,42 @@
                         <div class="mac-buttons">
                             <img src="img/ellipse1.png"><img src="img/ellipse2.png"><img src="img/ellipse3.png">
                         </div>
-                        <textarea class="textarea textarea-editor">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => 
-accum[key], obj)
+                        <textarea class="campo-codigo">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => 
+accum[key], obj) 
 
-const compose = (...fns) => res => fns.reduce((accum, next) => next(accum),
-res)
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), 
+res) 
 
-const unfold = (f, seed) => {
-  const go = (f, seed, acc) => {
-    const res = f(seed)
-    return res ? go(f, res[1], acc.concat([res[0]])) : acc
-  }
-  return go(f, seed, [])
-}</textarea>
+const unfold = (f, seed) => { 
+    const go = (f, seed, acc) => { 
+        const res = f(seed) 
+        return res ? go(f, res[1], 
+                                acc.concat([res[0]])) : acc 
+    } 
+    return go(f, seed, []) 
+}
+                        </textarea>
                     </div>
                 </div>
                 <input type="submit" value="Visualizar com o highlight" class="botao-visualizar-highlight">
             </div>
-
-            <div class="corpo-right">
-                <form>
-                    <label for="nome-projeto" class="subtitulo-projeto">Seu Projeto</label>
-                    <input type="text" id="nome-projeto" class="input" placeholder="Nome do seu projeto">
-                    <textarea placeholder="Descrição do seu projeto" class="input textarea descricao"></textarea>
-                </form>
-
-                <fieldset class="personalizacao">
-                    <legend class="subtitulo">Personalização</legend>
-                    <select class="input">
-                        <option>JavaScript</option>
-                        <option>HTML</option>
-                        <option>CSS</option>
-                    </select>
-                </fieldset>
-                <input type="color" class="color-picker" value="#6BD1FF">
+            <div>
+                <div class="projeto">
+                    <label for="nome-projeto" id="label-projeto" class="subtitulo">Seu Projeto</label>
+                    <input type="text" id="nome-projeto" class="input-padrao" placeholder="Nome do seu projeto">
+                    <textarea class="input-padrao input-descricao" placeholder="Descrição do seu projeto"></textarea>
+                </div>
+                <div class="personalizacao">
+                    <fieldset>
+                        <legend class="subtitulo">Personalização</legend>
+                        <select class="input-padrao">
+                            <option>JavaScript</option>
+                            <option>HTML</option>
+                            <option>CSS</option>
+                        </select>
+                    </fieldset>
+                </div>
             </div>
-
         </div>
     </main>
 </body>
