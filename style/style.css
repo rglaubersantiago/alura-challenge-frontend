@@ -191,7 +191,17 @@ body {
     margin: 40px 0 0 40px;
 }
 
-.personalizacao .input-padrao{
+.personalizacao .input-padrao, .color-picker{
     background: rgba(255, 255, 255, 0.16);
+    margin-top:16px;
     color:gray;
+}
+
+.color-picker{
+    width: 272px;
+    height: 56px;
+    border-radius:8px;
+    padding:4px;
+    background: rgba(196, 196, 196, 0.01);
+    border: 1px solid #FFFFFF;
 }

@@ -2,53 +2,53 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/reset.css">
-    <link rel="stylesheet" href="style/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
-    <title>Alura DEV</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/reset.css">
+  <link rel="stylesheet" href="style/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+  <title>Alura DEV</title>
 </head>
 
 <body>
-    <header class="cabecalho-principal">
-        <div class="container">
-            <h1>
-                <img src="img/Logo.svg" alt="Logo Alura DEV" class="logo">
-            </h1>
-            <form action="">
-                <input type="search" name="search" placeholder="Busque por algo" class="input-padrao input-search" />
-            </form>
-            <img src="img/author@3x.png" class="imagem-author">
-        </div>
-    </header>
-    <main class="principal">
-        <div class="container">
-            <div class="menu-navegacao">
-                <h2 class="subtitulo subtitulo-menu">Menu</h2>
-                <nav>
-                    <ul>
-                        <li>
-                            <div class="img-menu"><img src="img/vector-editor.svg"></div>
-                            <a href="#" class="link-menu">Editor de Código</a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <div class="img-menu"><img src="img/vector-comunidade.svg"></div>
-                            <a href="#" class="link-menu">Comunidade</a>
-                        </li>
-                    </ul>
-                </nav>
+  <header class="cabecalho-principal">
+    <div class="container">
+      <h1>
+        <img src="img/Logo.svg" alt="Logo Alura DEV" class="logo">
+      </h1>
+      <form action="">
+        <input type="search" name="search" placeholder="Busque por algo" class="input-padrao input-search" />
+      </form>
+      <img src="img/author@3x.png" class="imagem-author">
+    </div>
+  </header>
+  <main class="principal">
+    <div class="container">
+      <div class="menu-navegacao">
+        <h2 class="subtitulo subtitulo-menu">Menu</h2>
+        <nav>
+          <ul>
+            <li>
+              <div class="img-menu"><img src="img/vector-editor.svg"></div>
+              <a href="#" class="link-menu">Editor de Código</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <div class="img-menu"><img src="img/vector-comunidade.svg"></div>
+              <a href="#" class="link-menu">Comunidade</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <div class="code-editor-personalizacao">
+          <div class="code-editor">
+            <div class="mac-buttons">
+              <img src="img/ellipse1.png"><img src="img/ellipse2.png"><img src="img/ellipse3.png">
             </div>
-            <div>
-                <div class="code-editor-personalizacao">
-                    <div class="code-editor">
-                        <div class="mac-buttons">
-                            <img src="img/ellipse1.png"><img src="img/ellipse2.png"><img src="img/ellipse3.png">
-                        </div>
-                        <textarea class="campo-codigo">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => 
+            <textarea class="campo-codigo">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => 
 accum[key], obj) 
 
 const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), 
@@ -61,31 +61,31 @@ const unfold = (f, seed) => {
                                 acc.concat([res[0]])) : acc 
     } 
     return go(f, seed, []) 
-}
-                        </textarea>
-                    </div>
-                </div>
-                <input type="submit" value="Visualizar com o highlight" class="botao-visualizar-highlight">
-            </div>
-            <div>
-                <div class="projeto">
-                    <label for="nome-projeto" id="label-projeto" class="subtitulo">Seu Projeto</label>
-                    <input type="text" id="nome-projeto" class="input-padrao" placeholder="Nome do seu projeto">
-                    <textarea class="input-padrao input-descricao" placeholder="Descrição do seu projeto"></textarea>
-                </div>
-                <div class="personalizacao">
-                    <fieldset>
-                        <legend class="subtitulo">Personalização</legend>
-                        <select class="input-padrao">
-                            <option>JavaScript</option>
-                            <option>HTML</option>
-                            <option>CSS</option>
-                        </select>
-                    </fieldset>
-                </div>
-            </div>
+}</textarea>
+          </div>
         </div>
-    </main>
+        <input type="submit" value="Visualizar com o highlight" class="botao-visualizar-highlight">
+      </div>
+      <div>
+        <div class="projeto">
+          <label for="nome-projeto" id="label-projeto" class="subtitulo">Seu Projeto</label>
+          <input type="text" id="nome-projeto" class="input-padrao" placeholder="Nome do seu projeto">
+          <textarea class="input-padrao input-descricao" placeholder="Descrição do seu projeto"></textarea>
+        </div>
+        <div class="personalizacao">
+          <fieldset>
+            <legend class="subtitulo">Personalização</legend>
+            <select class="input-padrao">
+              <option>JavaScript</option>
+              <option>HTML</option>
+              <option>CSS</option>
+            </select>
+          </fieldset>
+          <input type="color" value="#6BD1FF" class="color-picker">
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 
 </html>
