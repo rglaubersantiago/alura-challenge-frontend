@@ -194,14 +194,23 @@ body {
 .personalizacao .input-padrao, .color-picker{
     background: rgba(255, 255, 255, 0.16);
     margin-top:16px;
+    width: 272px;
     color:gray;
 }
 
 .color-picker{
-    width: 272px;
     height: 56px;
     border-radius:8px;
     padding:4px;
     background: rgba(196, 196, 196, 0.01);
     border: 1px solid #FFFFFF;
+}
+
+.botao-salvar{
+    margin: 40px 0 0 40px;
+    background-color:#64B5F6;
+    border-radius: 8px;
+    color: #000000;
+    width: 272px;
+    height: 56px;
 }
